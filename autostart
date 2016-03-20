@@ -1,0 +1,20 @@
+## freq_bang autostart.sh
+## ====================
+## Have a lot of fun!
+
+## Set root window colour
+hsetroot -solid "#2E3436" &
+
+## Group start:
+## 1. feh - restores wallpaper
+## 2. tint2 panel
+
+(\
+feh --bg-scale /home/freq/Pictures/woods.jpg && \
+sleep 2s && \
+tint2 \
+) &
+
+
+## Run the conky
+conky -q &

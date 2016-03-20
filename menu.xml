@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Run..">
+			<action name="Execute">
+				<execute>gmrun</execute>
+			</action>
+		</item>
+		<item label="Terminal ">
+			<action name="Execute">
+				<execute>stterm</execute>
+			</action>
+		</item>
+		<item label="Browser">
+			<action name="Execute">
+				<execute>xombrero</execute>
+			</action>
+		</item>
+		<item label="Files">
+				<action name="Execute">
+					<execute>stterm -e mc</execute>
+				</action>
+			</item>
+		<separator/>
+		<menu id="root-menu-48743" label="games">
+			<item label="board">
+				<action name="Execute">
+					<execute>gtkboard</execute>
+				</action>
+			</item>
+			<item label="Invaders ">
+				<action name="Execute">
+					<execute>stterm -e ninvaders</execute>
+				</action>
+			</item>
+			<item label="MTest">
+				<action name="Execute">
+					<execute>minetest</execute>
+				</action>
+			</item>
+			<item label="SKAA">
+				<action name="Execute">
+					<execute>7kaa</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-345823" label="media">
+			<item label="mocp">
+				<action name="Execute">
+					<execute>stterm -e mocp</execute>
+				</action>
+			</item>
+			<item label="radio">
+				<action name="Execute">
+					<execute>stterm -e pianobar</execute>
+				</action>
+			</item>
+		    <item label="hasciicam">
+				<action name="Execute">
+					<execute>stterm -e hasciicam</execute>
+				</action>
+			</item>
+			<item label="matrix">
+				<action name="Execute">
+					<execute>stterm -e cmatrix -C white</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-831046" label="nets">
+			<item label="network">
+				<action name="Execute">
+					<execute>stterm -e wicd-curses</execute>
+				</action>
+			</item>
+			<item label="browser">
+				<action name="Execute">
+					<execute>xombrero</execute>
+				</action>
+			</item>
+			<item label="irc">
+				<action name="Execute">
+					<execute>stterm -e glirc -t irc.freenode.net</execute>
+				</action>
+			</item>
+		    <item label="torrents">
+				<action name="Execute">
+					<execute>stterm -e rtorrent</execute>
+				</action>
+			</item> 
+		</menu>
+		<menu id="root-menu-634652" label="utils">
+			<item label="calc">
+				<action name="Execute">
+					<execute>stterm -e genius</execute>
+				</action>
+			</item>
+			<item label="pdf">
+				<action name="Execute">
+					<execute>zathura</execute>
+				</action>
+			</item>
+			<item label="adresses">
+				<action name="Execute">
+					<execute>stterm -e abook</execute>
+				</action>
+			</item>
+			<item label="htop">
+				<action name="Execute">
+					<execute>stterm -e htop</execute>
+				</action>
+			</item>
+		    <item label="sysinfo">
+				<action name="Execute">
+					<execute>stterm -e screenfetch -s</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-68042" label="scrot">
+			<item label="Now">
+				<action name="Execute">
+					<execute>scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp;amp; feh ~/images/$f'</execute>
+				</action>
+			</item>
+			<item label="In 5 Seconds...">
+				<action name="Execute">
+					<execute>scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp;amp; feh ~/images/$f'</execute>
+				</action>
+			</item>
+			<item label="In 10 Seconds...">
+				<action name="Execute">
+					<execute>scrot -d 10 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp;amp; feh ~/images/$f'</execute>
+				</action>
+			</item>
+			<item label="Selected Area...">
+				<action name="Execute">
+					<execute>scrot -s '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/images/ &amp;amp; feh ~/images/$f'</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Lock">
+			<action name="Execute">
+				<execute>xtrlock</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
