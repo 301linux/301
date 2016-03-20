@@ -1,0 +1,91 @@
+background yes
+use_xft yes
+xftfont Sans:size=8
+xftalpha 1
+update_interval 5.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 200
+maximum_width 200
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color white
+default_shade_color black
+default_outline_color white
+alignment top_right
+gap_x 0
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+
+TEXT
+${font sans-serif:bold:size=8}301_linux ${hr 2}
+${font sans-serif:normal:size=7}$sysname $kernel $alignr $machine
+Host:$alignr$nodename
+Uptime:$alignr$uptime
+${color red}${font sans-serif:bold:size=12}EST:$alignr${time %H:%M:%S}
+${color white}${font sans-serif:normal:size=7}Day:$alignr${time %A %m.%d.%y}
+${font sans-serif:bold:size=7}PROCESSORS ${hr 2}
+${font sans-serif:normal:size=7}CPU(S): $alignr ${cpu cpu1}% | ${cpu cpu2}% 
+Frequency: $alignr  $freq MHz 
+Temperature: $alignr  ${hwmon 0 temp 1} C 
+${font sans-serif:bold:size=7}MEMORY ${hr 2}
+${font sans-serif:normal:size=7}I/O: $alignr ${diskio_read sda} | ${diskio_write sda}
+${font sans-serif:normal:size=7}RAM  $alignr $mem / $memmax 
+${font sans-serif:normal:size=7}/ $alignr ${fs_used /} / ${fs_size /} 
+${font sans-serif:normal:size=7}SWAP $alignr ${swap} / ${swapmax} 
+${font sans-serif:bold:size=7}TOP PROCESSES ${hr 2}
+${font sans-serif:normal:size=7}${top_mem name 1}${alignr}${top mem 1} %
+${font sans-serif:normal:size=7}${top_mem name 2}${alignr}${top mem 2} %
+${font sans-serif:normal:size=7}${top_mem name 3}${alignr}${top mem 3} %
+${font sans-serif:normal:size=7}${top_mem name 4}${alignr}${top mem 4} %
+${font sans-serif:normal:size=7}${top_mem name 5}${alignr}${top mem 5} %
+${font sans-serif:normal:size=7}${top_mem name 6}${alignr}${top mem 6} %
+${font sans-serif:bold:size=8}NETWORK${hr 2}${font sans-serif:normal:size=7}
+Node:$alignr${addr eth0}
+IP:$alignr${execi 3600 wget -O - http://ip.tupeux.com | tail}
+In:$alignr${downspeed eth0}
+Out:$alignr${upspeed eth0s0}
+${font sans-serif:bold:size=8}CONNECTIONS ${hr 2}${font sans-serif:normal:size=7}
+${tcp_portmon 32768 61000 rhost 0} ${alignr} ${tcp_portmon 32768 61000 rservice    0}
+${tcp_portmon 32768 61000 rhost 1} ${alignr} ${tcp_portmon 32768 61000 rservice    1}
+${tcp_portmon 32768 61000 rhost 2} ${alignr} ${tcp_portmon 32768 61000 rservice    2}
+${tcp_portmon 32768 61000 rhost 3} ${alignr} ${tcp_portmon 32768 61000 rservice    3}
+${tcp_portmon 32768 61000 rhost 4} ${alignr} ${tcp_portmon 32768 61000 rservice    4}
+${tcp_portmon 32768 61000 rhost 5} ${alignr} ${tcp_portmon 32768 61000 rservice    5}
+${tcp_portmon 32768 61000 rhost 6} ${alignr} ${tcp_portmon 32768 61000 rservice    6}
+${tcp_portmon 32768 61000 rhost 7} ${alignr} ${tcp_portmon 32768 61000 rservice    7}
+${tcp_portmon 32768 61000 rhost 8} ${alignr} ${tcp_portmon 32768 61000 rservice    8}
+${tcp_portmon 32768 61000 rhost 9} ${alignr} ${tcp_portmon 32768 61000 rservice    9}
+${tcp_portmon 32768 61000 rhost 10} ${alignr} ${tcp_portmon 32768 61000 rservice    10}
+${tcp_portmon 32768 61000 rhost 11} ${alignr} ${tcp_portmon 32768 61000 rservice    11}
+${tcp_portmon 32768 61000 rhost 12} ${alignr} ${tcp_portmon 32768 61000 rservice    12}
+${tcp_portmon 32768 61000 rhost 13} ${alignr} ${tcp_portmon 32768 61000 rservice    13}
+${tcp_portmon 32768 61000 rhost 14} ${alignr} ${tcp_portmon 32768 61000 rservice    14}
+${tcp_portmon 32768 61000 rhost 15} ${alignr} ${tcp_portmon 32768 61000 rservice    15}
+${tcp_portmon 32768 61000 rhost 16} ${alignr} ${tcp_portmon 32768 61000 rservice    16}
+${tcp_portmon 32768 61000 rhost 17} ${alignr} ${tcp_portmon 32768 61000 rservice    17}
+${tcp_portmon 32768 61000 rhost 18} ${alignr} ${tcp_portmon 32768 61000 rservice    18}
+${tcp_portmon 32768 61000 rhost 19} ${alignr} ${tcp_portmon 32768 61000 rservice    19}
+${tcp_portmon 32768 61000 rhost 20} ${alignr} ${tcp_portmon 32768 61000 rservice    20}
+${tcp_portmon 32768 61000 rhost 21} ${alignr} ${tcp_portmon 32768 61000 rservice    21}
+${tcp_portmon 32768 61000 rhost 22} ${alignr} ${tcp_portmon 32768 61000 rservice    22}
+${tcp_portmon 32768 61000 rhost 23} ${alignr} ${tcp_portmon 32768 61000 rservice    23}
+${tcp_portmon 32768 61000 rhost 24} ${alignr} ${tcp_portmon 32768 61000 rservice    24}
+${tcp_portmon 32768 61000 rhost 25} ${alignr} ${tcp_portmon 32768 61000 rservice    25}
+${tcp_portmon 32768 61000 rhost 26} ${alignr} ${tcp_portmon 32768 61000 rservice    26}
+${tcp_portmon 32768 61000 rhost 27} ${alignr} ${tcp_portmon 32768 61000 rservice    27}
+${tcp_portmon 32768 61000 rhost 28} ${alignr} ${tcp_portmon 32768 61000 rservice    28}
+${tcp_portmon 32768 61000 rhost 29} ${alignr} ${tcp_portmon 32768 61000 rservice    29}
+
+
+# wifi help can be found at: https://wiki.debian.org/Wireless
+
