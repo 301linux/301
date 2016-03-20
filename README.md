@@ -17,7 +17,7 @@ Package List(not a complete list, deps will install automatically):
 (as root)
 1.nano /etc/apt/sources.list 
 (add at the bottom of the list): 
-# SID  
+#sid  
 deb http://ftp.debian.org/debian/ sid main contrib non-free
 deb-src http://ftp.debiab.org/debian/ sid main contrib non-free
 (perform apt-get update)
@@ -43,11 +43,7 @@ Many of the packages chosen in the creation of this kit are CLI based and requir
 Installing bloat would be your endeavor alone. 
 ________________________________________________________________________________
 
- _   _                           _       _            __    __             _ 
-| | | | __ ___   _____    __ _  | | ___ | |_    ___  / _|  / _|_   _ _ __ | |
-| |_| |/ _` \ \ / / _ \  / _` | | |/ _ \| __|  / _ \| |_  | |_| | | | '_ \| |
-|  _  | (_| |\ V /  __/ | (_| | | | (_) | |_  | (_) |  _| |  _| |_| | | | |_|
-|_| |_|\__,_| \_/ \___|  \__,_| |_|\___/ \__|  \___/|_|   |_|  \__,_|_| |_(_)
+Have a lot of fun! 
 
 _________________________________________________________________________________
  
