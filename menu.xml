@@ -23,9 +23,9 @@
 			</item>
 		<separator/>
 		<menu id="root-menu-48743" label="games">
-			<item label="board">
+			<item label="MUD">
 				<action name="Execute">
-					<execute>gtkboard</execute>
+					<execute>stterm -e telnet www.ateraan.com 4002</execute>
 				</action>
 			</item>
 			<item label="Invaders ">
