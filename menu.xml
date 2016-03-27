@@ -109,6 +109,10 @@
 					<execute>stterm -e htop</execute>
 				</action>
 			</item>
+			<item label="screen">
+				<action name="Execute"
+				        <execute>stterm -e screen</action>
+			</item>
 		    <item label="sysinfo">
 				<action name="Execute">
 					<execute>stterm -e screenfetch -s</execute>
