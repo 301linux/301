@@ -72,11 +72,6 @@
 			</item>
 		</menu>
 		<menu id="root-menu-831046" label="nets">
-			<item label="network">
-				<action name="Execute">
-					<execute>stterm -e wicd-curses</execute>
-				</action>
-			</item>
 			<item label="browser">
 				<action name="Execute">
 					<execute>xombrero</execute>
