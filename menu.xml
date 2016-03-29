@@ -6,12 +6,12 @@
 				<execute>gmrun</execute>
 			</action>
 		</item>
-		<item label="Editor"
+		<item label="Editor">
 		        <action name="Execute">
 			        <execute>stterm -e vi</execute>
 			</action>        
 		</item>
-		<item label="Terminal ">
+		<item label="Terminal">
 			<action name="Execute">
 				<execute>stterm</execute>
 			</action>
