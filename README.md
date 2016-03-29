@@ -12,6 +12,9 @@ You will first notice, aside from this readme, a few folders(show hidden).
 3..conkyrc: This is a light script that shows in the upper right-hand corner of your screen. It contains system properties and events you will find useful. 
 
 _______________________________________________________________________________
+If you are on a wired connection, you wont need to change a thing (aside from the optional /etc/network/interfaces configging).
+Wifi: (as root) 'man iwconfig' and go from there. (wiki.debian.org is your friend)
+
 Package List(not a complete list, deps will install automatically): 
 
 (as root)
@@ -23,7 +26,7 @@ deb-src http://ftp.debiab.org/debian/ sid main contrib non-free
 (perform apt-get update)
 
 2.apt-get install
-7kaa, abook, alsa-base, alsa-oss, alsa-utils, assword, cmake, cmatrix, conky, coreutils, debian-archive-keyring, dict, dpkg, feh, gawk, gcc, genius, glirc, gmrun, gtkboard, hasciicam, hdparm, htop, inxi, iw, jack, lm-sensors, mc, minetest, mplayer, nano, ninvaders, openbox, openssl, pianobar, pulseaudio, rsync, rtorrent, screen, screenfetch, scrot, sl, speedtest-cli, stterm, suckless-tools, sudo, tint2, tor, torsocks, wget, wicd, wicd-curses, xinit, xombrero, xorg, xserver-xorg, xtrlock, youtube-dl, zathura, zip
+7kaa, abook, alsa-base, alsa-oss, alsa-utils, assword, cmake, cmatrix, conky, coreutils, debian-archive-keyring, dict, dpkg, feh, gawk, gcc, genius, glirc, gmrun, hasciicam, hdparm, htop, inxi, iw, iwconfig, jack, lm-sensors, mc, minetest, moc, mplayer, nano, ninvaders, openbox, openssl, pianobar, pulseaudio, rsync, rtorrent, screen, screenfetch, scrot, sl, speedtest-cli, stterm, suckless-tools, sudo, tint2, tor, torsocks, wget, xinit, xombrero, xorg, xserver-xorg, xtrlock, youtube-dl, zathura, zip
 
 3.apt-get update
 4.apt full-upgrade
