@@ -27,7 +27,7 @@ deb-src http://ftp.debiab.org/debian/ sid main contrib non-free
 3.apt-get update
 4.apt full-upgrade
 _______________________________________________________________________________
-Okay! it's almost ready. 
+Okay! It's almost ready. 
 
 1.Place .xinitrc, .conkyrc and .xombrero.conf in /home/user
 2.Place openbox and tint2 in /home/user/.config
