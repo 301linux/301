@@ -87,6 +87,11 @@
 					<execute>stterm -e rtorrent</execute>
 				</action>
 			</item> 
+			<item label="wifi">
+                                <action name="Execute">
+                                        <execute>stterm -e wicd-cli --wirless -l</execute>
+                                </action>
+                        </item>
 		</menu>
 		<menu id="root-menu-634652" label="utils">
 			<item label="calc">
