@@ -38,6 +38,11 @@
 					<execute>stterm -e ninvaders</execute>
 				</action>
 			</item>
+			<item label="monopoly">
+                                <action name="Execute">
+                                        <execute>gtkatlantic</execute>
+                                </action>
+                        </item>
 			<item label="MTest">
 				<action name="Execute">
 					<execute>minetest</execute>
@@ -89,7 +94,7 @@
 			</item> 
 			<item label="wifi">
                                 <action name="Execute">
-                                        <execute>stterm -e wicd-cli --wirless -l</execute>
+                                        <execute>stterm -e wicd-cli --wireless -l</execute>
                                 </action>
                         </item>
 		</menu>
