@@ -22,7 +22,7 @@ deb-src http://ftp.debiab.org/debian/ sid main contrib non-free
 (perform apt-get update)
 
 2.apt-get install
-7kaa, abook, alsa-base, alsa-oss, alsa-utils, assword, cmake, cmatrix, conky, coreutils, debian-archive-keyring, dict, dpkg, feh, gawk, gcc, genius, glirc, gmrun, gtkatlantic, hasciicam, hdparm, htop, inxi, iw, jack, lm-sensors, mc, minetest, mplayer, nano, ninvaders, openbox, openssl, pianobar, pulseaudio, rsync, rtorrent, screen, screenfetch, scrot, sl, speedtest-cli, stterm, suckless-tools, sudo, tint2, tor, torsocks, wget, wicd, wicd-curses, xinit, xombrero, xorg, xserver-xorg, xtrlock, youtube-dl, zathura, zip
+7kaa, abook, alsa-base, alsa-oss, alsa-utils, assword, cmake, cmatrix, conky, coreutils, debian-archive-keyring, dict, dpkg, feh, gawk, gcc, genius, glirc, gmrun, gtkatlantic, hasciicam, hdparm, htop, inxi, iw, jack, lm-sensors, mc, minetest, mplayer, nano, ninvaders, openbox, openssl, pianobar, pulseaudio, rsync, rtorrent, screen, screenfetch, scrot, sl, speedtest-cli, stterm, suckless-tools, sudo, tint2, tor, torsocks, wget, wicd, wicd-curses, xinit, xombrero, xorg, xserver-xorg, xterm, xtrlock, youtube-dl, zathura, zip
 
 3.apt-get update
 4.apt full-upgrade
