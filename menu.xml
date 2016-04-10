@@ -94,7 +94,7 @@
 			</item> 
 			<item label="wifi">
                                 <action name="Execute">
-                                        <execute>stterm -e wicd-cli --wireless -l</execute>
+                                        <execute>xterm -e wicd-curses</execute>
                                 </action>
                         </item>
 		</menu>
