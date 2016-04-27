@@ -104,14 +104,19 @@
 					<execute>stterm -e genius</execute>
 				</action>
 			</item>
-			<item label="pdf">
+			<item label="word">
+                                <action name="Execute">
+                                        <execute>stterm -e wordgrinder</execute>
+                                </action>
+                        </item>
+                        <item label="addys">
+                                <action name="Execute">
+                                        <execute>stterm -e abook</execute>
+                                </action>
+                        </item>
+                        <item label="pdf">
 				<action name="Execute">
 					<execute>zathura</execute>
-				</action>
-			</item>
-			<item label="adresses">
-				<action name="Execute">
-					<execute>stterm -e abook</execute>
 				</action>
 			</item>
 			<item label="htop">
